@@ -18,7 +18,7 @@ function countCats(matrix) {
   let count = 0;
 
   for (let row in matrix) {
-    count += backyard[row].filter((el)=> el === '^^').length;
+    count += matrix[row].filter((el)=> el === '^^').length;
   }
 
   return count;
